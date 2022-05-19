@@ -1,0 +1,8 @@
+//archivo de configuracion de reglas 
+
+{
+    "rules" : {
+        //error cuando sean comillas simples
+        "quotes": ["warn", "single"]
+    }
+}
