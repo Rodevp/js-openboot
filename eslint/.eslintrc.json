@@ -1,8 +1,32 @@
-//archivo de configuracion de reglas 
-
 {
-    "rules" : {
-        //error cuando sean comillas simples
-        "quotes": ["warn", "single"]
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": "eslint:recommended", //nos ayuda a extender las reglas
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-unused-vars" : [
+            "warn"
+        ]
     }
 }
